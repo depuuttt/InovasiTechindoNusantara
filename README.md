@@ -4,7 +4,7 @@ This is a landing page project for PT. Techindo Nusantara Innovation. This page 
 
 ## Overview
 
-Demo : 
+Demo :
 
 ## Feature
 
@@ -17,3 +17,5 @@ Demo :
 ## Changelogs
 
 **27/05/2023 v0.0.1**
+
+- Migration from static HTML to CI4 Framework

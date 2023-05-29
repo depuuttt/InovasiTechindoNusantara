@@ -1,0 +1,369 @@
+/* Reset styles */
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+header {
+  background: #f1f1f1;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+}
+
+.hero-text {
+  margin-top: 50px;
+  color: white;
+  padding: 10vw;
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero-text h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  margin: 20px 0;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgba(31, 48, 81, 0.5);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.cta-button:hover {
+  transition: all 0.3s ease-in;
+  background: rgba(31, 48, 81, 1);
+}
+
+/* About section */
+.about {
+  display: flex;
+  align-items: center;
+  padding: 80px 40px;
+}
+
+.about-text {
+  flex: 1;
+  padding-right: 40px;
+  text-align: justify;
+}
+
+.about-text h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Services section */
+.services {
+  text-align: center;
+  padding: 80px 40px;
+}
+
+.services h2 {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.service-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.service-card a {
+  position: relative;
+  text-decoration: none;
+  color: #132444;
+  transition: all 0.5s ease-in;
+}
+
+.service-card a:active {
+  color: #132444;
+}
+
+.service-card a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.service-card a:hover::after {
+  transform: scaleX(1);
+}
+
+.service-card .yt-vids {
+  display: flex;
+  justify-content: center;
+}
+
+.service-card .yt-vids iframe {
+  width: 640px;
+  height: 360px;
+}
+
+.service-icon {
+  display: block;
+  width: 160px;
+  height: 160px;
+  margin-bottom: 20px;
+}
+
+.service-icon img {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.service-icon img:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+.service-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Contact section */
+.contact {
+  text-align: center;
+  padding: 80px 40px;
+}
+
+.contact h2 {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.contact-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.contact-group .contact-point {
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.contact-group .contact-point ion-icon,
+.contact-group .contact-point p {
+  margin: 0 5px;
+}
+
+.contact form input,
+.contact form textarea {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: block;
+  width: 50%;
+  padding: 10px;
+  margin: auto;
+  margin-bottom: 20px;
+  border: 2px solid #132444;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.contact form input:focus,
+.contact form textarea:focus {
+  transition: all 0.3s ease-in;
+  border: 2px solid #132444;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact form input:focus::placeholder,
+.contact form textarea:focus::placeholder,
+.contact form input:placeholder-shown,
+.contact form textarea:placeholder-shown {
+  transition: all 0.3s ease-in;
+  color: transparent;
+}
+
+.contact form button {
+  display: inline-block;
+  padding: 20px 40px;
+  background: #132444;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2),
+    -4px -4px 8px rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+.contact form button:hover {
+  transition: all 0.5s ease-out;
+  background: #315476;
+}
+
+/* Footer */
+footer {
+  background: #132444;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+/* Modal */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #132444;
+  text-align: center;
+}
+
+.modal hr {
+  border: none;
+  border-top: 3px solid #132444;
+  margin: auto;
+  margin-bottom: 20px;
+  width: 100px;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  text-align: justify;
+}
+
+.modal-content .about-me .profile-group {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.modal-content .about-me .profile-point {
+  margin: 0 20px;
+}
+
+.modal-content .about-me .profile-point a {
+  color: #132444;
+  transition: all 0.3s ease-in;
+}
+
+.modal-content .about-me .profile-point a:hover {
+  opacity: 0.8;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s;
+}
+
+.fade-out {
+  animation: fadeOut 0.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
