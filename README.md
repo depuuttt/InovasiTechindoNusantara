@@ -16,6 +16,13 @@ Demo :
 
 ## Changelogs
 
-**27/05/2023 v0.0.1**
+**29/05/2023 v0.0.1**
 
 - Migration from static HTML to CI4 Framework
+
+**29/05/2023 v0.0.2a**
+Update v0.0.2 will focused on login and register function
+
+- Added dashboard controller
+- Added login routes
+- Added login page

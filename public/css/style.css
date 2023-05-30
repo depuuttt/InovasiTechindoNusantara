@@ -49,6 +49,10 @@ header {
   color: #333;
 }
 
+nav .dropdown-menu {
+  width: 25vw;
+}
+
 .hero-text {
   margin-top: 50px;
   color: white;
