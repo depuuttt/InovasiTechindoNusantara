@@ -26,7 +26,7 @@ Demo :
 
 This update will focused on login and register function
 
-**29/05/2023 v0.0.2a**
+**30/05/2023 v0.0.2a**
 
 - Added dashboard controller
 - Added login routes
