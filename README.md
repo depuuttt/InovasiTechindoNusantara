@@ -23,6 +23,7 @@ Demo :
 - Migration from static HTML to CI4 Framework
 
 ### Update v0.0.2
+
 This update will focused on login and register function
 
 **29/05/2023 v0.0.2a**
@@ -30,3 +31,9 @@ This update will focused on login and register function
 - Added dashboard controller
 - Added login routes
 - Added login page
+
+**31/05/2023 v0.0.2b**
+
+- Added register routes
+- Added register page
+- New Method! (A lot of HTML attributes now processed in JS)

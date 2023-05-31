@@ -71,7 +71,13 @@
         <li><a href="#about-us">About</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#contacts">Contact</a></li>
-        <li><a href="#">Sign In</a></li>
+        <li class="dropdown">
+          <a href="#" class="" role="button" data-bs-toggle="dropdown" aria-expanded="false">Account</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="/login">Login</a>
+            <a class="dropdown-item" href="/register">Register</a>
+          </div>
+        </li>
       </ul>
     </nav>
     <div class="hero-text">

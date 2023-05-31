@@ -33,12 +33,14 @@ ion-icon {
 }
 
 #loginForm input[type="email"],
-#loginForm input[type="password"] {
+#loginForm input[type="password"],
+#loginForm input[type="text"] {
   text-align: center;
 }
 
 #loginForm input[type="email"]::placeholder,
-#loginForm input[type="password"]::placeholder {
+#loginForm input[type="password"]::placeholder,
+#loginForm input[type="text"]::placeholder {
   text-align: center;
   opacity: 0.7;
 }

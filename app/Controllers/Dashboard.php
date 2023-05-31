@@ -13,4 +13,9 @@ class Dashboard extends BaseController
     {
         return view('dashboard/login');
     }
+
+    public function register()
+    {
+        return view('dashboard/register');
+    }
 }
